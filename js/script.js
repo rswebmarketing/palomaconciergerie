@@ -85,10 +85,10 @@ if(wa){
 
 /* ---------- Apparition au défilement ---------- */
 if('IntersectionObserver' in window&&!window.matchMedia('(prefers-reduced-motion: reduce)').matches){
-  var targets=$$('.sec .wrap > *, .proof .pitem, .sec .grid3 > *, .sec .steps > *, .sec .events > *, .svcgrid > *, .rvgrid > *, .qgrid > *, .feelist > *, .advs > *, .pstable .psr');
+  var targets=$$('.sec .wrap > *, .proof .pitem, .sec .grid3 > *, .sec .steps > *, .sec .events > *, .path > *, .svcgrid > *, .rvgrid > *, .qgrid > *, .feelist > *, .advs > *, .pstable .psr');
   var seen=[];
   targets.forEach(function(el){
-    if(el.closest('.hero')||el.hasAttribute('data-panel')||seen.indexOf(el)>-1)return;seen.push(el);
+    if(el.closest('.hero')||el.hasAttribute('data-panel')||el.classList.contains('path')||seen.indexOf(el)>-1)return;seen.push(el);
     el.classList.add('rv');
     var sib=el.parentNode.children,i=Array.prototype.indexOf.call(sib,el);
     el.style.setProperty('--d',(Math.min(i,5)*0.07)+'s');

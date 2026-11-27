@@ -440,13 +440,7 @@ html{scroll-behavior:auto}
 }
 
 /* v4 : CTA agrandi, pied de page discret */
-.ctabtns{gap:16px;margin-top:44px}
 .sec.ctasec{padding:150px 0}
-.cta .h2{font-size:58px;line-height:1.14;max-width:900px;letter-spacing:-0.6px}
-.cta .lead{font-size:23px;max-width:760px;margin-top:24px}
-.cta .eyebrow{font-size:15px}
-.cta .btn{min-height:68px;font-size:19px;padding:0 34px;border-radius:14px}
-.cta .btn svg{width:24px;height:24px}
 .foot{align-items:flex-start}
 .foot p{line-height:1.6}
 .legal{margin-left:auto;text-align:left;font-size:13px}
@@ -458,7 +452,7 @@ html{scroll-behavior:auto}
 .legalbody{width:min(760px,88vw);margin-top:14px;color:#8E9195;line-height:1.6}
 .legalbody p+p{margin-top:10px}
 .legalbody b{color:#C4C6C8;font-weight:600}
-@media (max-width:720px){.sec.ctasec{padding:96px 0}.cta .h2{font-size:38px}.cta .lead{font-size:19px}.cta .btn{width:100%;min-height:62px}.legal{margin-left:0}.legal summary{text-align:left}}
+@media (max-width:720px){.sec.ctasec{padding:96px 0}.legal{margin-left:0}.legal summary{text-align:left}}
 
 /* ===== v4 : animations et états ===== */
 .stepper button{transition:border-color .2s ease,transform .15s ease}

@@ -36,7 +36,7 @@ var sim=$('.sim');
 if(sim){
   var PRICES=[106,125,145,165,185,205,224,244,264,284,304,323];
   var RATES={Smart:[24,22,20],Essentiel:[20,18,16]};
-  var st={sc:4,sn:200,sd:0,sf:'Smart'};
+  var st={sc:4,sn:250,sd:0,sf:'Smart'};
   var fmt=function(n){return Math.round(n).toLocaleString('fr-FR').replace(/[\u202f\u00a0]/g,' ')};
   var out=function(k,v){$$('[data-o="'+k+'"]',sim).forEach(function(e){e.textContent=v})};
   var calc=function(){
@@ -98,4 +98,8 @@ if('IntersectionObserver' in window&&!window.matchMedia('(prefers-reduced-motion
   },{threshold:0.12,rootMargin:'0px 0px -40px 0px'});
   seen.forEach(function(el){io.observe(el)});
 }
+/* ---------- Mentions légales dépliables ---------- */
+$$('a[href="#legal"]').forEach(function(a){a.addEventListener('click',function(){
+  var d=$('#legal');if(d){d.open=true}
+})});
 })();
